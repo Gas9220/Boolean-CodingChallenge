@@ -1,0 +1,110 @@
+* {
+    margin: auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('img/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.main-container {
+    background-color: rgb(0, 0, 0, 0.4);
+    margin-top: 30px;
+    width: 1000px;
+    height: 80vh;
+    border-radius: 10px;
+    text-align: center;
+    position: relative
+}
+
+.inner-container {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#logo {
+    width: 120px;
+}
+
+header h1{
+    color: rgb(34, 219, 39);
+}
+
+nav div {
+    background-color: rgb(34, 219, 39);
+    border-radius: 10px;
+    max-width: 75%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+nav button {
+    cursor: pointer;
+}
+
+.info-box {
+    width: 75%;
+    text-align: left;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.square {
+    display: inline-block;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+}
+
+div.info-box h3 {
+    display: inline-block;
+    color: white;
+    font-weight: lighter;
+}
+
+div.info-box p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+div.info-box p:before {
+    content: '\2192';
+}
+
+.charge-status {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.charge-level {
+    height: 30px;
+    border-radius: 8px;
+    float: left;
+}
+
+#half-charge {
+    background-color: orange;
+    width: 30%;
+
+}
+
+#low-charge {
+    background-color: red;
+    width: 15%;
+}
+
+#high-charge {
+    background-color: rgb(0, 196, 0);
+    width: 50%;
+}
